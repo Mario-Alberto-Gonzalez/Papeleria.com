@@ -1,0 +1,12 @@
+h1{
+    display: flex;
+    justify-content: space-between;
+    width: 185px;
+    height: 65px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: darkolivegreen;
+    color: black;
+    text-align: center;
+    width: 20%;
+}
