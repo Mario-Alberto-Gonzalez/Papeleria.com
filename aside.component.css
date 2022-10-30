@@ -1,0 +1,21 @@
+h2{
+    text-align: center;
+    justify-content: right;
+}
+ul{
+    list-style-type: none;
+    justify-content: right;
+}
+li{
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 00.5rem;
+    text-align: center;
+}
+li:hover{
+    cursor: pointer;
+    border-right: 1px solid rgb(red, green, blue);
+    border-bottom: 1px solid rgb(red, green, blue);
+    border-bottom-right-radius: 10px;
+    font-size: 1.2rem;
+}
