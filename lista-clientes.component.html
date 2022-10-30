@@ -1,0 +1,9 @@
+<div *ngFor="let cliente of listaClientes">
+    <h3>{{cliente.idCliente}}.{{cliente.nombres}}.{{cliente.apellidos}}</h3>
+    <p>identificacion:{{cliente.identificacion}}</p>
+    <p>ciudad:{{cliente.ciudad}}</p>
+    <p>dirección:{{cliente.direccion}</p>
+    <p>correo:{{cliente.correo}}</p>
+    <p>celular:{{cliente.celular}}</p>
+    <a routerLink="['/clientes', cliente.idCliente]">detalles</a>
+</div>
