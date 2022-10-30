@@ -1,0 +1,40 @@
+<div>
+    <form (ngSubmit)="guardarData()" #clienteForm="ngForm">
+        <div>
+            <label for="idCliente">idCliente</label>
+            <input id="idCliente" name="idCliente" [(ngModel)]="cliente.idCliente" type="text" placeholder="id del Cliente"> 
+        </div>
+        <div>
+            <label for="identificacion">identificacion</label>
+            <input id="identificacion" name="identificacion" [(ngModel)]="cliente.identificacion" type="text" placeholder="identificacion del clientte">
+        </div>
+        <div>
+            <label for="nombres">nombres</label>
+            <input id="nombres" name="nombres" [(ngModel)]="cliente.nombres" type="text" placeholder="nombres del clientte">
+        </div>
+        <div>
+            <label for="apellidos">apellidos</label>
+            <input id="apellidos" name="apellidos" [(ngModel)]="cliente.apellidos" type="text" placeholder="apellidos del clientte">
+        </div>
+        <div>
+            <label for="ciudad">ciudad</label>
+            <input id="ciudad" name="ciudad" [(ngModel)]="cliente.ciudad" type="text" placeholder="ciudad del clientte">
+        </div>
+        <div>
+            <label for="direccion">direccion</label>
+            <input id="direccion" name="" type="text" placeholder="direccion del clientte">
+        </div>
+        <div>
+            <label for="correo">correo</label>
+            <input id="correo" name="correo" [(ngModel)]="cliente.correo" type="text" placeholder="correo del clientte">
+        </div>
+        <div>
+            <label for="celular">celular</label>
+            <input id="celular" name="celular" [(ngModel)]="cliente.celular" type="text" placeholder="celular del clientte">
+        </div>
+        <div>
+            <button [disabled]="!clienteForm.form.valid">Crear</button>
+        </div>
+    </form>
+</div>
+
